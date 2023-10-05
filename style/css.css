@@ -10,7 +10,7 @@ h1 {
     text-align: left;
 }
 .menuFoto1{
-    background-image: url(media/slide4.jpg);
+    background-image: url(../media/slide4.jpg);
     padding: 23%;  
     transition: 0.5s;
     background-size: cover;
