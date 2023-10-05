@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+    <title>Page Title</title>
+    <link rel="icon" href="../img/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../css/css.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="js/calcularPropina.js"></script>  
+    </head>
+    <body class="body">
+        <div class="img-container col-sm-12">
+            <div class="menuFoto1">
+              <h1 id="textoFoto1">Evalencia's House</h1>
+              <!-- <img src="../img/slide2.jpg" alt="Imagen 1" id="foto1" width="100%"> -->
+            </div>
+        </div>
+          <div class="miniMenu">
+            <span class="inline-span" id="span1"><h2>Calcula una propina justa</h2></span>
+          </div>
+          <form id="myForm">
+            <div class="row">
+                <div class="col-sm-4">
+                  <label for="formGroup1">Cuantos somos?</label>
+                  <input type="text" class="form-control" placeholder="5" id="input1">
+                </div>
+                <div class="col-sm-4">
+                  <label for="formGroup1">Cual es el total de la factura?</label>
+                  <input type="text" class="form-control" placeholder="87,40" id="input2">
+                  <!--Span para mostrar el error de campo obligatorio -->
+                  <span class="error" id="nombreError"></span><br><br>
+                </div>
+                <div class="col-sm-4">
+                  <label for="formGroup1">Opina sobre el servicio</label>
+                  <select id="inputState" class="form-control">
+                    <option selected disabled>Elije...</option>
+                    <option id="Genial">Genial</option>
+                    <option id="Aceptable">Aceptable</option>
+                    <option id="Horrible">Horrible</option>
+                  </select>
+                  <!--Span para mostrar el error de campo obligatorio -->
+                  <span class="error" id="formSatisfac"></span><br><br>
+                </div>
+            </div>
+              <button type="button" onclick="validatePropina()" class="btn btn-primary" id="calcularPropinaButton">Calcular Propina</button>
+          </form>
+        <footer><p>@Marc Pons Cabrera</p></footer>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+    </body>
+  </html>
