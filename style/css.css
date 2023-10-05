@@ -1,0 +1,90 @@
+.body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.img-container{
+    overflow: hidden;
+}
+h1 {
+    text-align: left;
+}
+.menuFoto1{
+    background-image: url(../img/slide4.jpg);
+    padding: 23%;  
+    transition: 0.5s;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.menuFoto1:hover {
+    transform: scale(1.01);
+}
+#textoFoto1{
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color:rgba(0, 0, 0, 0.425) ;
+    padding: 10px;
+    text-align: center; 
+    position:static;
+}
+.miniMenu {
+    text-align: center;
+   /* background-color: rgba(75, 73, 73, 0.952);*/
+}
+.inline-span {
+    color: white;
+   padding: 20px;
+}
+form {
+    padding: 20px;
+    margin: 20px;
+    color: white;
+    border-radius: 20px;
+}
+#input1, #input2, #input3, #inputState {
+    width: 50%;
+    transition: 0.5s;
+}
+#input1:hover, #input2:hover, #input3:hover, #inputState:hover {
+    width: 60%;   
+}
+
+#calcularPropinaButton{
+    margin-top: 20px;
+    transition: 0.5s;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+}
+#calcularPropinaButton::after {
+    content: "";
+    background: #2f05c4; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    right: -100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;    
+  }
+  #calcularPropinaButton:hover::after {
+    left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  }
+footer{
+    color: white;
+    padding: 5px;
+    left:0px;
+    bottom:0px;
+    width:100%;
+    text-align: center;
+}
