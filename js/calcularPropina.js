@@ -18,14 +18,13 @@ function validatePropina()   {
     return;
   }
   if (opinion === "Genial") {
-    pgPropina = 10;
+    pgPropina = 0.10;
   } else if (opinion === "Aceptable") {
-    pgPropina = 5;
+    pgPropina = 0.05;
   } else {
     pgPropina = 0;
   }
-  var propina = (totalFactura * pgPropina) / 100;
-  var propinaPorComensal = propina / cantidad;
+  var propinaPorComensal = (totalFactura * pgPropina) / cantidad;
   if (propinaPorComensal < 0.5) {
     alert("La propina por comensal mínima es de 0.50, se te aplicará el mínimo.");
     propinaPorComensal = 0.50;
@@ -33,7 +32,6 @@ function validatePropina()   {
   const confirmacion = confirm(`Datos de la propina :
   Cantidad de comensales: ${cantidad}
 	Total factura es: ${totalFactura} €
-	Propina total es: ${propina} €
   Propina por comensal es de : ${propinaPorComensal} €
 	¿Quieres continuar?`);
 
